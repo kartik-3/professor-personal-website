@@ -60,22 +60,27 @@
           </v-list-item-icon>
           <v-list-item-title>Presentations</v-list-item-title>
         </v-list-item>
-        <v-list-item link @click="goToMedia" >
+        <!-- <v-list-item link @click="goToMedia" >
           <v-list-item-icon>
             <v-icon>mdi-camera</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Media</v-list-item-title>
-        </v-list-item>
+        </v-list-item> -->
       </v-list>
     </v-navigation-drawer>
+    <v-alert v-if="currentRouteName !='Home' && $vuetify.breakpoint.width > 1000" class="ml-12 text-justify text-h6 white--text light-blue accent-3" dense style="top: 64px;"
+      text elevation="2" rounded="0">
+      <strong>{{currentPageName}}</strong>
+    </v-alert>
     <v-main style="padding-left: 0px !important;">
       <router-view />
     </v-main>
+    <div class="mb-6"></div>
   </v-app>
 </template>
 
 <script>
-import { routerPush } from './utils/constants';
+import { routerPush, pageNameFromRouter } from './utils/constants';
 
 export default {
   name: 'App',
@@ -86,6 +91,9 @@ export default {
   computed: {
     currentRouteName() {
       return this.$route.name;
+    },
+    currentPageName() {
+      return pageNameFromRouter(this.currentRouteName)
     }
   },
   methods: {

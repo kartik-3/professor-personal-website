@@ -1,15 +1,23 @@
 <template>
-  <div>teachings</div>
+  <v-container class="mt-6">
+    <div v-for="teaching in teachings" :key="teaching.session">
+      <teaching-card :session="teaching.session" :courses="teaching.courses"></teaching-card>
+    </div>
+  </v-container>
 </template>
 
 <script>
-  import HomePage from '../components/HomePage'
+import TeachingCard from '../components/TeachingCard'
+import teachingData from "../data/teaching/teachingData.json"
 
-  export default {
-    name: 'Teaching',
+export default {
+  name: 'Teaching',
 
-    components: {
-      HomePage,
-    },
-  }
+  components: {
+    TeachingCard
+  },
+  data: () => ({
+    teachings: teachingData,
+  })
+}
 </script>

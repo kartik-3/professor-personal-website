@@ -1,0 +1,59 @@
+[
+  {
+    "session": "Fall 2021",
+    "courses": [
+      {
+        "title": "CSE 435/535 Introduction to Information Retrieval",
+        "link": "https://www.acsu.buffalo.edu/~rohini/CSE_535.html"
+      },
+      {
+        "title": "CSE 704 Seminar: NLP for Positive Impact",
+        "link": "https://www.acsu.buffalo.edu/~rohini/CSE_704.html"
+      }
+    ]
+  },{
+    "session": "Spring 2021",
+    "courses": [
+      {
+        "title": "CSE 635 NLP and Text Mining",
+        "link": "https://www.acsu.buffalo.edu/~rohini/CSE_635.html"
+      }
+    ]
+  },{
+    "session": "Fall 2020",
+    "courses": [
+      {
+        "title": "CSE 435/535 Introduction to Information Retrieval",
+        "link": "https://www.acsu.buffalo.edu/~rohini/CSE_535.html"
+      }
+    ]
+  },{
+    "session": "Spring 2020",
+    "courses": [
+      {
+        "title": "CSE 635 NLP and Text Mining",
+        "link": "https://www.acsu.buffalo.edu/~rohini/CSE_635.html"
+      },
+      {
+        "title": "CSE 701 Seminar: Conversational AI"
+      }
+    ]
+  },{
+    "session": "Fall 2019",
+    "courses": [
+      {
+        "title": "CSE 435/535 Introduction to Information Retrieval"
+      }
+    ]
+  },{
+    "session": "Spring 2019",
+    "courses": [
+      {
+        "title": "CSE 635 Advanced Information Retrieval"
+      },
+      {
+        "title": "CSE 701 Seminar: AI for Societal Impact"
+      }
+    ]
+  }
+]

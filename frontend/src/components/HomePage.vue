@@ -76,7 +76,6 @@
       from
       the State University of New York.
     </p>
-    <div class="mb-12"></div>
   </v-container>
 </template>
 

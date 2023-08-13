@@ -6,7 +6,7 @@ import ResearchView from '../views/ResearchView.vue'
 import PublicationsView from '../views/PublicationsView.vue'
 import AISocialGoodView from '../views/AISocialGoodView.vue'
 import PresentationView from '../views/PresentationView.vue'
-import MediaView from '../views/MediaView.vue'
+// import MediaView from '../views/MediaView.vue'
 
 Vue.use(VueRouter)
 
@@ -41,11 +41,11 @@ const routes = [
     name: 'Presentation',
     component: PresentationView
   },
-  {
-    path: '/media',
-    name: 'Media',
-    component: MediaView
-  },
+  // {
+  //   path: '/media',
+  //   name: 'Media',
+  //   component: MediaView
+  // },
 ]
 
 const router = new VueRouter({
